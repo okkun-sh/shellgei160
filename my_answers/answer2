@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+ls ../qdata/2/img/*.png | perl -nle '$_=~/(.*)\.png$/; print $1' | xargs -If convert f.png f.jpg
+
